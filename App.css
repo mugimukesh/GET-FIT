@@ -1,0 +1,440 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #111827;
+  border-bottom: 2px solid black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  backdrop-filter: blur(12px);
+  height: 5vw;
+  z-index: 1;
+}
+.logoImg {
+  width: 4vw;
+  height: 4vw;
+  margin-left: 10px;
+  border-radius: 50px;
+  border: 1.5px solid rgb(140, 112, 251);
+}
+.logoCon {
+  display: flex;
+  align-items: center;
+}
+.logoName {
+  justify-content: center;
+  text-align: center;
+  margin-left: 25px;
+  font-size: 2.5vw;
+  color: rgb(246, 245, 250);
+}
+.navLink {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  right: 0;
+  margin-right: 30px;
+  font-size: 2.2ch;
+}
+.navLink a {
+  text-decoration: none;
+  color: rgb(212, 120, 255);
+  text-align: center;
+  justify-content: center;
+}
+.navLink a:hover {
+  color: white;
+}
+.loginButton {
+  color: white;
+  border: none;
+  margin-left: 40px;
+  font-size: 2ch;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  background-color: rgb(140, 112, 251);
+  border: 2px solid #111827;
+}
+.loginButton:hover {
+  background-color: white;
+  color: rgb(140, 112, 251);
+  border: 2px solid rgb(140, 112, 251);
+}
+.bgImg {
+  background: url(assets/Background.png);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  filter: blur(5px);
+  z-index: -1;
+}
+.homeContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-80%, -50%);
+  text-align: left;
+  color: white;
+}
+.homeContent h1 {
+  font-size: 5vw;
+}
+.homeContent p {
+  filter: brightness(60%);
+  font-size: 2vw;
+}
+.welBut {
+  background-color: rgb(140, 112, 251);
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.welBut:hover {
+  background-color: white;
+  color: rgb(140, 112, 251);
+  border: 2px solid rgb(140, 112, 251);
+}
+.welBut a:hover {
+  color: rgb(140, 112, 251);
+}
+.welBut a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3vw;
+}
+.homeCard {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: white;
+}
+#Home {
+  background-color: rgb(137, 144, 142);
+}
+#Home h2 {
+  font-size: 4vw;
+  margin-left: 25px;
+}
+.card {
+  height: 70vh;
+  width: 30%;
+  background-color: rgb(17, 24, 39);
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+.card img {
+  width: 70%;
+  height: 75%;
+  border-radius: 10px;
+  box-shadow: gray 0px 0px 10px 5px;
+}
+.card button {
+  background-color: rgb(140, 112, 251);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+.card button:hover {
+  background-color: white;
+  color: rgb(140, 112, 251);
+  border: 2px solid rgb(140, 112, 251);
+}
+
+#About {
+  height: 100vh;
+  background-color: rgb(17, 24, 39);
+  color: white;
+  padding-left: 20px;
+}
+.abttit {
+  color: rgb(140, 112, 251);
+  font-size: 3vw;
+  padding-top: 2%;
+}
+.abtConImg {
+  width: 100%;
+  display: flex;
+}
+.aboutImg {
+  width: 35%;
+  height: 40%;
+  right: 0%;
+  border-radius: 10px;
+  box-shadow: black 0px 0px 10px 5px;
+}
+.aboutImg:hover {
+  box-shadow: white 0px 0px 10px 2px;
+}
+.abtcon {
+  font-size: 2vw;
+  width: 50%;
+  padding-right: 80px;
+}
+.aboutGym {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.aboutCard {
+  width: 22%;
+  text-align: center;
+  border-right: 2px solid rgb(140, 112, 251);
+  margin: 1.25%;
+}
+.aboutContent {
+  font-size: 3vw;
+  color: rgb(212, 120, 255);
+}
+.aboutTitle {
+  font-size: 2vw;
+  color: rgb(140, 112, 251);
+}
+
+.expCardAll {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#Explore {
+  background-color: rgb(137, 144, 142);
+}
+.expCard {
+  width: 21%;
+  height: 80vh;
+  background-color: rgb(37, 44, 59);
+  border-radius: 20px;
+  margin: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.expCard img {
+  width: 90%;
+  height: 60%;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: gray 0px 0px 5px 3px;
+}
+.expCard samp {
+  color: rgb(212, 120, 255);
+  font-size: 2vw;
+}
+.expCard p {
+  font-size: 1.5vw;
+  color: rgb(160, 152, 291);
+}
+.expTitle h2 {
+  font-size: 4vw;
+  margin-left: 25px;
+  color: rgb(3, 2, 4);
+}
+.expTitle ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+}
+.expTitle a {
+  text-decoration: none;
+  color: white;
+}
+.expTitle a:hover {
+  color: rgb(140, 112, 251);
+}
+
+.expTitle button {
+  background-color: rgb(140, 112, 251);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100px;
+  font-size: 1.2vw;
+  border: 2px solid transparent;
+}
+.expTitle button:hover {
+  background-color: white;
+  border: 2px solid rgb(140, 112, 251);
+}
+.expTitle {
+  text-align: center;
+  justify-content: center;
+}
+
+#Contact {
+  background-color: rgb(17, 24, 39);
+  color: white;
+
+  height: auto;
+}
+
+.allCont h2 {
+  font-size: 4vw;
+  margin-left: 25px;
+  color: rgb(140, 112, 251);
+}
+.allCont p {
+  font-size: 1.5vw;
+  margin-left: 25px;
+}
+.contDet {
+  background-color: rgb(137, 144, 142);
+  border-radius: 5px;
+  gap: 2rem;
+  margin-left: 25px;
+  padding-bottom: 1px;
+}
+.contDet:hover {
+  box-shadow: gray 0px 0px 5px 3px;
+}
+
+.contDet h3 {
+  margin-left: 25px;
+  color: rgb(17, 24, 39);
+  font-size: 1.4vw;
+}
+.contDet p {
+  color: rgb(65, 61, 15);
+  font-size: 1.2vw;
+}
+.contFlex {
+  display: flex;
+  width: 100%;
+}
+.contFlex1 {
+  width: 40%;
+  margin-right: 10%;
+}
+
+form {
+  background-color: rgb(137, 144, 142);
+  margin-top: 1%;
+  border-radius: 5px;
+  width: 40%;
+  right: 0%;
+}
+tr {
+  flex-direction: column;
+  display: flex;
+}
+td {
+  color: black;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+input {
+  background-color: antiquewhite;
+  border: none;
+  padding: 5px;
+  width: 98%;
+  color: rgb(65, 61, 15);
+  border-radius: 5px;
+}
+textarea {
+  background-color: antiquewhite;
+  border: none;
+  color: rgb(65, 61, 15);
+  border-radius: 5px;
+}
+.contButt input {
+  width: 30%;
+  border-radius: 5px;
+  background-color: rgb(205, 207, 199);
+  color: rgb(65, 61, 15);
+  border: 2px solid transparent;
+}
+.contButt {
+  text-align: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.contButt input:hover {
+  border: 2px solid rgb(65, 55, 4);
+}
+
+footer {
+  background-color: rgb(137, 144, 142);
+}
+.footerLogo {
+  display: flex;
+}
+.footerLogo h2 {
+  font-size: 1.5vw;
+  margin-left: 10px;
+  color: rgb(140, 112, 251);
+}
+.footerMain p {
+  font-size: 1vw;
+  filter: brightness(30%);
+}
+.footerMain {
+  margin-left: 25px;
+  width: 30%;
+}
+.footerSocial {
+  display: flex;
+  gap: 2rem;
+}
+.footerSocial a {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(14, 15, 15, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  text-decoration: none;
+  border-radius: 2px;
+  margin-bottom: 30px;
+}
+.footerTop {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #111827;
+}
+.footerNev {
+  width: 20%;
+}
+.footerTop a {
+  color: rgb(65, 61, 15);
+  filter: brightness(70%);
+  text-decoration: none;
+}
+.footerTop h4 {
+  color: rgb(37, 44, 59);
+  padding-left: 25px;
+}
+.footerFac {
+  width: 20%;
+}
+.footerCont li {
+  color: rgb(65, 61, 15);
+  list-style: none;
+}
+.footerTop li {
+  list-style: none;
+}
+.footerCopy {
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  color: rgb(65, 61, 15);
+}
+.footerCopy span {
+  color: rgb(37, 44, 59);
+}
+
